@@ -198,9 +198,4 @@ io.on('connection', socket => {
 Server.listen(process.env.PORT || 8000, () => {
     console.log(`http://localhost:${PORT}`)
 })
-const showChat=(chats)=>{
-    for(let i=0;i<chats.length;i++){
-        console.log(chats[i]['name'])
-        console.log("hi")
-    }
-}
+
