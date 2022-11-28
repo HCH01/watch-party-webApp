@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Party</title>
+</head>
+<link rel="stylesheet" href="homeCss.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+<body>
+    <div class="container flex">
+        <div class="container_box">
+            <div class="logo flex">WATCH <p class="party-logo">party</p>
+            </div>
+            <div class="credentials flex">
+                <div class="form-box">
+                    <div class="make-room">
+                        <div class="nickname">Nickname</div>
+                        <div class="err">
+                            <input id="nick" class="int" type="text" autocomplete="off" placeholder="Nickname">
+                            <p class="text-err">Nickname must contain atleast 3 letters and atmost 10 letter with no special characters</p>
+                        </div>
+                        <div class="button-box">
+                            <div class="new-room cursor-pointer button" onclick="checkNick()">Make room</div>
+                            <div class="join-room cursor-pointer button" onclick="showJoinRoom()">Join room</div>
+                        </div>
+                    </div>
+                    <div class="join-room-box">
+                        <form action="/check" id="checkRoom" method="post" class="flex">
+                            <input id="roomID" name="room" class="int" type="text" autocomplete="off" placeholder="Room ID">
+                            <button id="btn" onclick="checkNick(true)" class="cursor-pointer button" type="submit">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="home.js"></script>
+
+</html>

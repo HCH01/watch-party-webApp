@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party room</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+    <div class="container" id="body-container">
+        <div class="vid" id="vid-cont">
+           <video width="100%" preload="auto" id="vide" controls >
+            <source  id="vid-src" type="video/mp4">
+        </video>
+            <div class="copy" id="copyId"></div>
+            <!-- <div class="roomID">Lorem, ipsum dolor sit amet </div> -->
+        </div>
+        <div class="messege">
+            <div class="video-source" id="video-src-cont">
+                <input type="text" id="input-source" placeholder="Enter link of video">
+                <button id="src-play">Play</button>
+            </div>
+            <div class="cont2">
+
+                <div id="msg-cont">
+    
+                </div>
+                <div class="input">
+    
+                    <form id="form" action="#">
+                        <input type="text" id="message" autocomplete="off" placeholder="Enter your text here">
+                    </form>
+                </div>
+                <div class="active-user" id="users">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="index1.js"></script>
+
+</html>

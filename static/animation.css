@@ -1,0 +1,203 @@
+@keyframes revolve {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate3d(0, -10, 0, 80deg);
+        top: -500px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -100px;
+        opacity: 1;
+    }
+}
+@keyframes shadow {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes shadow1 {
+    0% {
+        opacity: 0.7;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    75% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes fade {
+    0% {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+@keyframes color_change {
+    25%{
+        background-color:  rgb(105, 57, 240);
+        box-shadow: 0px 0px 2em rgb(74, 20, 223);
+
+    }
+    50%{
+        background-color: rgb(243, 63, 138);
+        box-shadow: 0px 0px 2em rgb(224, 4, 96);
+    
+    }
+    75%{
+        background-color: yellow;
+        box-shadow: 0px 0px 2em yellow;
+    }
+}
+@keyframes shadow_change {
+    25%{
+        box-shadow: 50px 50px 5em rgb(72, 15, 230);
+        
+    }
+    50%{
+        box-shadow: 50px 50px 5em rgb(224, 4, 96);
+
+    }
+    75%{
+        box-shadow: 50px 50px 5em yellow;
+    }
+}
+.z{
+    z-index: 10 !important;
+}
+.AnimeDown{
+    animation: down 2s forwards;
+}
+@keyframes down {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 100vh;
+    }
+}
+.AnimeLeft{
+    animation: left 2s forwards;
+}
+@keyframes left {
+    0%{
+        bottom: 200vh;
+        right: 250vh;
+    }
+    100%{
+        bottom: 200vh;
+        right: 0;
+    }
+}
+.AnimeRight{
+    animation: right 2s forwards;
+}
+@keyframes right {
+    0%{
+        bottom: 300vh;
+        left: 250vh;
+    }
+    100%{
+        bottom: 300vh;
+        left: 0;
+    }
+}
+.AnimeTop{
+    animation: top 2s forwards;
+}
+@keyframes top {
+    0%{
+        bottom: 150vh;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@media (max-width:480px) {
+    
+    .AnimeDown{
+        animation: down 2s forwards;
+    }
+    @keyframes down {
+        0%{
+            bottom: 0;
+        }
+        100%{
+            bottom: 100vh;
+        }
+    }
+    .AnimeLeft{
+        animation: left 2s forwards;
+    }
+    @keyframes left {
+        0%{
+            bottom: 200vh;
+            right: 100vw;
+        }
+        100%{
+            bottom: 200vh;
+            right: 0;
+        }
+    }
+    .AnimeRight{
+        animation: right 2s forwards;
+    }
+    @keyframes right {
+        0%{
+            bottom: 300vh;
+            left: 100vw;
+        }
+        100%{
+            bottom: 300vh;
+            left: 0;
+        }
+    }
+    .AnimeTop{
+        animation: top 2s forwards;
+    }
+    @keyframes top {
+        0%{
+            bottom: 150vh;
+        }
+        100%{
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.flex{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+}
+.form-box{
+    /* background-color: blueviolet; */
+    height: 200px;
+    padding: 10px;
+}
+.int {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: white;
+}
+.int-err{
+    outline: 2px solid red;
+}
+#btn{
+    width: 60px;
+    font-size: 1rem;
+}
+
+.button-box{
+    display: flex;
+}
+.join-room{
+    margin-left: 20px;
+}
+.cursor-pointer{
+    user-select: none;
+    cursor: pointer;
+}
+.button{
+    padding: 5px;
+    background-color: rgb(65, 24, 212);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    margin-top: 10px;
+}
+.make-room{
+    margin: 10px;
+    cursor: default;
+}
+.logo{
+    cursor: default;
+    user-select: none;
+    height: 10rem;
+    font-size: 5rem;
+    flex-direction: row;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+}
+.party-logo{
+    padding-left: 20px;
+    font-family: 'Pacifico', cursive;
+    font: 3rem;
+    color: rgb(65, 24, 212);
+}
+.nickname{
+    color: white;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 2px;
+}
+.join-room-box{
+    display: none;
+}
+div.button:hover{
+    box-shadow: 0px 0px 10px rgb(65, 24, 212) ;
+    outline: 2px black solid;
+}
+button.button:hover{
+    box-shadow: 0px 0px 10px rgb(65, 24, 212) ;
+}
+p.party-logo:hover{
+    text-shadow: 0px 0px 10px rgb(65, 24, 212) ;
+}
+.text-err{
+    margin-top: 2px;
+    color: red;
+    font-size: 14px;
+    width: 260px;
+    display: none;
+}
+.container{
+    background-image: url("frame2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 320vh;
+}
+.container_box{
+    position: relative;
+}
+
+@media (max-width:530px) {
+    
+    .logo{
+        height: 7rem;
+        font-size: 3rem;
+    }
+    .container{
+        background-image: url("frame3.jpg");
+        background-size: cover;
+    }
+    .container_box{
+        position: relative;
+        bottom: 50px;
+    }
+}
+
