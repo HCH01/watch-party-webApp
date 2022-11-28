@@ -1,4 +1,4 @@
-require('dotenv').config();
+
 const socket = require('socket.io');
 const express = require('express');
 const app = express();
@@ -11,6 +11,7 @@ const io = require('socket.io')(Server, {
         origin: '*',
     }
 });
+require('dotenv').config();
 const mongoose = require('mongoose');
 mongoose.connect(process.env.DB_URI,{
     useNewUrlParser: true,
