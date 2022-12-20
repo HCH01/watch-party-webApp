@@ -39,9 +39,6 @@ app.get('/', (req, res) => {
 app.get('/party', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/index.html'))
 })
-app.get('/swipe', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/swip.html'))
-})
 app.get("/room-not-found",(req,res)=>{
     res.sendFile(path.join(__dirname,'views/notfound.html'))
 })
@@ -135,9 +132,9 @@ io.on('connection', socket => {
             if(links[key]!=undefined){
                 socket.to(key).emit('get-link',links[key])
             }
-            else if(link.length ==80){//https://drive.google.com/file/d/1ZdcTeG5vBcbc4eVq352SpQGz-P04g-UL/view?usp=sharing
+            else if(link.length ===80){
                 links[key]=link;
-                socket.to(key).emit('get-link',links[key])//https://drive.google.com/file/d/1QD_Sqq_Ee6xt-KR6Ob0tBPKL0L7naVS8/view?usp=sharing
+                socket.to(key).emit('get-link',links[key])
             }
         }
     })
@@ -189,7 +186,6 @@ io.on('connection', socket => {
         catch{
             console.log('err')
         }
-            // console.log(rooms)
         }
         console.log('end')
         delete userRoom[socket.id];
